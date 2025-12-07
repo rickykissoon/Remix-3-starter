@@ -1,0 +1,35 @@
+{
+  "name": "remix3-starter",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "npm-run-all --parallel dev:server dev:client",
+    "dev:server": "tsx server.ts",
+    "dev:client": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.17",
+    "@types/node": "^24.10.1",
+    "npm-run-all": "^4.1.5",
+    "playwright": "^1.57.0",
+    "tailwindcss": "^4.1.17",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vite": "^6.4.1"
+  },
+  "dependencies": {
+    "@remix-run/dom": "^0.0.0-experimental-remix-jam.6",
+    "@remix-run/events": "^0.0.0-experimental-remix-jam.5",
+    "@remix-run/fetch-router": "^0.13.0",
+    "@remix-run/headers": "^0.18.0",
+    "@remix-run/html-template": "^0.3.0",
+    "@remix-run/node-fetch-server": "^0.12.0"
+  }
+}
