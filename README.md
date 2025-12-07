@@ -115,6 +115,7 @@ npm install -D npm-run-all
 
 Heres the structure of our app
 
+```bash
 ├── server.ts                       # Node HTTP entrypoint
 ├── vite.config.mts                 # Vite configuration
 ├── tsconfig.json                   # Typescript compiler options
@@ -127,6 +128,7 @@ Heres the structure of our app
    │   └── style.css               # Tailwind entrypoint
    └── server/
        └── router.ts               # Server router
+```
 
 **server.ts** Uses @remix-run/node-fetch-server to adapt Node's http server to the Fetch API and forwards every request to router.fetch(request).
 **vite.config.mts** Vite configuration that wires up Tailwinds, and aliases React's JSX runtime imports to @remix-run/dom. Remix has its own version of JSX that uses class for CSS class names, and has additional attributes specific to Remix 3.
