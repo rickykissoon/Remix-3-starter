@@ -28,30 +28,30 @@ To understand the Remix 3 packages, its helpful to understand the basic componen
 - **HTTP server/platform** -  Accepts TCP connections, parses them as HTTP requests, and hands them to your app code. (Bun, Deno, Django, Cloudflare Workers, etc).
    - @remix-run/node-fetch-server (adapts nodes HTTP server to the Fetch API, other runtimes such as Bun, Deno, or cloudflare workers already support Fetch so you may not need an adapter if you use those).
 - **Router + middleware** - Maps (method, URL) to handler code, and composes middleware logic such as auth, logging, input validation, body parsing, etc.
-....* @remix-run/fetch-router
-....* @remix-run/route-pattern
-....* @remix-run/async-context-middleware
-....* @remix-run/logger-middleware
+⋅⋅⋅⋅* @remix-run/fetch-router
+⋅⋅⋅⋅* @remix-run/route-pattern
+⋅⋅⋅⋅* @remix-run/async-context-middleware
+⋅⋅⋅⋅* @remix-run/logger-middleware
 - **Data / session layer** - How you read/write data, track users, manage session/cookies. (ORMs and drivers: Prisma, mysql, passport etc).
-....* @remix-run/session
-....* @remix-run/cookie
-....* @remix-run/file-storage
-....* @remix-run/lazy-file
+⋅⋅⋅⋅* @remix-run/session
+⋅⋅⋅⋅* @remix-run/cookie
+⋅⋅⋅⋅* @remix-run/file-storage
+⋅⋅⋅⋅* @remix-run/lazy-file
 - **Rendering/HTML** - How you turn your UI description into HTML (template engines like handlebars, react, vue, etc).
-....* @remix-run/html-template
-....* @remix-run/headers
-....* @remix-run/dom 
+⋅⋅⋅⋅* @remix-run/html-template
+⋅⋅⋅⋅* @remix-run/headers
+⋅⋅⋅⋅* @remix-run/dom 
 - **Client runtime + UI framework** - Hydration, interactivity, and (optionally) navigation on the client. (react, nextjs, vue, HTMX).
-....* @remix-run/interaction
-....* @remix-run/dom
-....* Framework level APIs, hydrated(), Frame
+⋅⋅⋅⋅* @remix-run/interaction
+⋅⋅⋅⋅* @remix-run/dom
+⋅⋅⋅⋅* Framework level APIs, hydrated(), Frame
 - **Static files/assets** - How you handle and serve files like images, CSS, JS, etc.
-....* @remix-run/static-middleware
-....* @remix-run/mime
-....* @remix-run/fs
-....* @remix-run/lazy-file
+⋅⋅⋅⋅* @remix-run/static-middleware
+⋅⋅⋅⋅* @remix-run/mime
+⋅⋅⋅⋅* @remix-run/fs
+⋅⋅⋅⋅* @remix-run/lazy-file
 - **Build system/dev tooling** - Dev server + bundler that turns TS/jSX etc into deployable server + client bundles and static assets. (NGINX/Apace, Cloudflare pages, Vite).
-....* Remix 3 is intentionally runtime first and bundler agnostic. Everything is written against Web APIs and can execute in Node, Deno, Bun, Workers, etc.
+⋅⋅⋅⋅* Remix 3 is intentionally runtime first and bundler agnostic. Everything is written against Web APIs and can execute in Node, Deno, Bun, Workers, etc.
 
 ## Building an App
 The goal is a minimal Remix 3 stack that:
