@@ -26,7 +26,7 @@ What this mean is that if you want to build a web app of any kind (API Server, S
 To understand the Remix 3 packages, its helpful to understand the basic components of a web app, and the various Remix 3 packages that may fit into those roles.
 
 - **HTTP server/platform** -  Accepts TCP connections, parses them as HTTP requests, and hands them to your app code. (Bun, Deno, Django, Cloudflare Workers, etc).
-   - @remix-run/node-fetch-server (adapts nodes HTTP server to the Fetch API, other runtimes such as Bun, Deno, or cloudflare workers already support Fetch so you may not need an adapter if you use those).
+⋅⋅⋅⋅* @remix-run/node-fetch-server (adapts nodes HTTP server to the Fetch API, other runtimes such as Bun, Deno, or cloudflare workers already support Fetch so you may not need an adapter if you use those).
 - **Router + middleware** - Maps (method, URL) to handler code, and composes middleware logic such as auth, logging, input validation, body parsing, etc.
 ⋅⋅⋅⋅* @remix-run/fetch-router
 ⋅⋅⋅⋅* @remix-run/route-pattern
